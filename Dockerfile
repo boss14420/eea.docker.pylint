@@ -1,7 +1,7 @@
-FROM python:2-alpine
+FROM python:3-alpine
 MAINTAINER "EEA: IDM2 A-Team" <eea-edw-a-team-alerts@googlegroups.com>
 
-ENV PYLINT_VERSION=1.9.5
+ENV PYLINT_VERSION=2.2.3
 
 RUN apk add --no-cache --virtual .run-deps git \
  && apk add --no-cache curl \
