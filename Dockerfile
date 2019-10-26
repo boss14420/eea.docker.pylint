@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .run-deps git \
 
 COPY pylint.cfg /etc/pylint.cfg
 COPY docker-entrypoint.sh /
-RUN pip install --no-cache-dir https://minio.dev.ftech.ai/axiom-client/axiom_client-1.4.0-py3-none-any.whl
+RUN pip install --no-cache-dir https://minio.dev.ftech.ai/axiom-client/axiom_client-1.5.0-py3-none-any.whl
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["pylint"]
