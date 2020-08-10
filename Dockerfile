@@ -1,4 +1,2 @@
-FROM thorstenhans/helm3
-MAINTAINER "EEA: IDM2 A-Team" <eea-edw-a-team-alerts@googlegroups.com>
-
-RUN apt-get update && apt-get install -y jq && rm -rf /var/lib/apt/lists/*
+FROM ventx/helm3-ci
+RUN apk --update --no-cache add jq
